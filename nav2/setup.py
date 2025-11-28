@@ -22,7 +22,7 @@ setup(
         'console_scripts': ["navig.py = nav2.navig:main",
                             "camera_viewer.py = nav2.camera_viewer:main",
                             "task1c.py = nav2.task1c:main",
-                            "camera_viewer_3A.py = nav2.camera_viewer_incorrect_tfs:main",
+                            "camera_viewer_3A.py = nav2.camera_viewer_3A:main",
                             "servoing2.py = nav2.servoing2:main",
                             "lidar.py = nav2.lidar:main",
                             "task2a.py = nav2.task2a:main",
