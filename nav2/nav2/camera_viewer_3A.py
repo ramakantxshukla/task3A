@@ -57,8 +57,8 @@ class FruitPosePublisher(Node):
         )
 
         # RGB + Depth synchronizer
-        self.sub_img = Subscriber(self, Image, '/camera/image_raw')        # /camera/camera/color/image_raw ####################################################################
-        self.sub_depth = Subscriber(self, Image, '/camera/depth/image_raw')# /camera/camera/aligned_depth_to_color/image_raw #############################################################3
+        self.sub_img = Subscriber(self, Image, '/camera/camera/color/image_raw')        # /camera/camera/color/image_raw ####################################################################
+        self.sub_depth = Subscriber(self, Image, '/camera/camera/aligned_depth_to_color/image_raw')# /camera/camera/aligned_depth_to_color/image_raw #############################################################3
         self.ts = ApproximateTimeSynchronizer(
             [self.sub_img, self.sub_depth], queue_size=10, slop=0.1
         )
